@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>YOUR_NAME — builder of things</title>
+<title>YOUR_NAME</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Archivo+Black&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
 <style>
   :root {
-    --bg: #0c0c0e;
-    --bg-soft: #15151a;
-    --ink: #f4f4ee;
-    --muted: #8a8a93;
-    --acid: #d4ff3f;       /* primary accent — bold + nerdy */
-    --coral: #ff5c4d;      /* secondary accent — outgoing pop */
-    --line: #26262c;
+    --bg: #fdf6ec;         /* warm cream */
+    --bg-soft: #f7ecdb;    /* deeper cream for cards */
+    --ink: #2e2722;        /* warm dark brown, not cold black */
+    --muted: #94867a;      /* warm taupe */
+    --acid: #e8623f;       /* terracotta — primary accent */
+    --coral: #f0a13e;      /* marigold/amber — secondary */
+    --line: #e7d9c4;       /* soft tan borders */
     --mono: 'JetBrains Mono', monospace;
     --display: 'Archivo Black', sans-serif;
     --body: 'Archivo', sans-serif;
@@ -48,14 +48,15 @@
   ::selection { background: var(--acid); color: var(--bg); }
 
   /* ---------- nav ---------- */
-  nav {
+nav {
     position: fixed; top: 0; left: 0; right: 0;
     display: flex; justify-content: space-between; align-items: center;
     padding: 1.1rem 2rem;
     font-family: var(--mono);
     font-size: 0.85rem;
     z-index: 100;
-    mix-blend-mode: difference;
+    background: rgba(253, 246, 236, 0.82);
+    backdrop-filter: blur(8px);
   }
   nav .logo { font-weight: 700; letter-spacing: -0.02em; }
   nav .logo::before { content: "› "; color: var(--acid); }
@@ -274,10 +275,11 @@
 <body>
 
 <nav>
-  <div class="logo">YOUR_NAME</div>
+  <div class="logo">Asrar</div>
   <div class="links">
     <a href="#about">about</a>
     <a href="#work">work</a>
+    <a href="#leadership">leadership</a>
     <a href="#skills">skills</a>
     <a href="#life">life</a>
     <a href="#contact">contact</a>
@@ -285,10 +287,10 @@
 </nav>
 
 <header class="hero">
-  <div class="tag">// available for hire · based in YOUR_CITY</div>
+  <div class="tag">// available for hire · based in Stockholm, Sweden</div>
   <h1>
-    <span>YOUR</span>
-    <span>NAME</span>
+    <span>Asrar</span>
+    <span>Maqbool</span>
   </h1>
   <div class="typed"><span id="typed-text"></span><span class="cursor">_</span></div>
   <div class="scroll-hint">scroll, or just talk to the terminal below</div>
@@ -320,30 +322,63 @@
   </div>
 </section>
 
-<section id="work">
-  <div class="section-label">experience</div>
-  <div class="job">
-    <div class="when">2023 — now</div>
+<div class="job">
+    <div class="when">Apr 2026 — now</div>
     <div>
-      <h3>COMPANY NAME</h3>
-      <div class="role">Your Title</div>
-      <p class="desc">One or two punchy lines about what you shipped and the impact. Lead with a number if you have one.</p>
+      <h3>CytaCoat</h3>
+      <div class="role">New Market &amp; Product Strategy Intern</div>
+      <p class="desc">Running market and product strategy for a novel antimicrobial coating that cuts healthcare-associated infections. Identifying new business segments and building the case for market entry — competitive landscape, partnership potential, regulatory feasibility, and ranked product recommendations.</p>
     </div>
   </div>
   <div class="job">
-    <div class="when">2021 — 2023</div>
+    <div class="when">Nov 2025 — now</div>
     <div>
-      <h3>PREVIOUS COMPANY</h3>
-      <div class="role">Your Title</div>
-      <p class="desc">What you did, who it helped, and the result. Keep it human — recruiters skim.</p>
+      <h3>Willuhn Consulting</h3>
+      <div class="role">Associate to the Managing Director</div>
+      <p class="desc">Supporting strategic initiatives across digital, market, and consulting work. Leading a new company website, driving market-expansion research, and running CMC consulting research to support client engagements and business development.</p>
     </div>
   </div>
   <div class="job">
-    <div class="when">2019 — 2021</div>
+    <div class="when">Jun 2024 — Jun 2025</div>
     <div>
-      <h3>EARLIER ROLE</h3>
-      <div class="role">Your Title</div>
-      <p class="desc">The thing that got you started and what you learned from it.</p>
+      <h3>Amar Biosystems</h3>
+      <div class="role">Business Development Assistant</div>
+      <p class="desc">Led BD for a microfluidics startup serving life sciences — mRNA lipid nanoparticles, polymeric nanoparticles, and cell &amp; gene therapy. Built collaborations to validate equipment, secured qualified leads at major industry exhibitions, and grew engagement 89% and leads 65% through SEO and digital campaigns.</p>
+    </div>
+  </div>
+
+<section id="leadership">
+  <div class="section-label">leadership</div>
+  <div class="job">
+    <div class="when">Jan 2026 — now</div>
+    <div>
+      <h3>iGEM Stockholm</h3>
+      <div class="role">Wiki Project Lead &amp; Finance Team</div>
+      <p class="desc">Leading a 6-person team building the official competition website, and helping secure 175,000 SEK in early-stage grants from KTH and Karolinska to fund lab work, travel, and competition.</p>
+    </div>
+  </div>
+  <div class="job">
+    <div class="when">Nov 2025 — now</div>
+    <div>
+      <h3>Business Committee · Medicinska Föreningen, KI</h3>
+      <div class="role">Corporate Relations Manager</div>
+      <p class="desc">Leading corporate outreach and partnerships for CHaSE, KI's life-science career fair connecting 800+ students with top employers. Drive guest acquisition and sponsorships for the NU Pulse podcast (headline sponsor: Bayer), owning the partnership lifecycle from prospecting to contract.</p>
+    </div>
+  </div>
+  <div class="job">
+    <div class="when">Jun 2023 — May 2024</div>
+    <div>
+      <h3>Tinkerers' Lab · ICT Mumbai</h3>
+      <div class="role">Inaugural Facility Manager</div>
+      <p class="desc">Built the maker-lab from the ground up, leading a team of 10 on daily operations and mentoring students through their prototyping projects.</p>
+    </div>
+  </div>
+  <div class="job">
+    <div class="when">Sep 2022 — Jun 2023</div>
+    <div>
+      <h3>UPL Vortex 10.0 · ICT Mumbai</h3>
+      <div class="role">Marketing &amp; Hospitality Head</div>
+      <p class="desc">Led a 50+ student team to deliver Asia's largest student-run ChemFest — 5,000+ participants on a ~€26,000 budget, backed by the Royal Society of Chemistry, UNESCO, and industry sponsors including UPL and Dow.</p>
     </div>
   </div>
 </section>
@@ -366,18 +401,18 @@
   <div class="section-label">cat ~/currently.txt</div>
   <div class="now-grid">
     <div class="now-card">
-      <div class="k">▶ now playing</div>
-      <div class="v">SONG / ARTIST <span class="eq"><i></i><i></i><i></i><i></i></span></div>
+      <div class="k">▶ Hey Jude</div>
+      <div class="v">The Beatles <span class="eq"><i></i><i></i><i></i><i></i></span></div>
       <div class="sub">on repeat this week</div>
     </div>
     <div class="now-card">
       <div class="k">📖 now reading</div>
-      <div class="v">BOOK TITLE</div>
-      <div class="sub">by AUTHOR · 60% in</div>
+      <div class="v">100 Years War on Palestine</div>
+      <div class="sub">by Rashid Khalidi · 60% in</div>
     </div>
     <div class="now-card">
       <div class="k">🎬 last watched</div>
-      <div class="v">FILM TITLE</div>
+      <div class="v">Kung Fu Panda</div>
       <div class="sub">would absolutely rewatch</div>
     </div>
   </div>
@@ -388,18 +423,16 @@
   <div class="marquee">
     <div class="track">
       <!-- list is duplicated once so the loop is seamless; edit BOTH copies -->
-      <div class="poster"><span class="rank">01</span><div class="title">Movie One</div><div class="meta">Director · Year</div></div>
-      <div class="poster"><span class="rank">02</span><div class="title">Movie Two</div><div class="meta">Director · Year</div></div>
-      <div class="poster"><span class="rank">03</span><div class="title">Movie Three</div><div class="meta">Director · Year</div></div>
-      <div class="poster"><span class="rank">04</span><div class="title">Movie Four</div><div class="meta">Director · Year</div></div>
-      <div class="poster"><span class="rank">05</span><div class="title">Movie Five</div><div class="meta">Director · Year</div></div>
-      <div class="poster"><span class="rank">01</span><div class="title">Movie One</div><div class="meta">Director · Year</div></div>
-      <div class="poster"><span class="rank">02</span><div class="title">Movie Two</div><div class="meta">Director · Year</div></div>
-      <div class="poster"><span class="rank">03</span><div class="title">Movie Three</div><div class="meta">Director · Year</div></div>
-      <div class="poster"><span class="rank">04</span><div class="title">Movie Four</div><div class="meta">Director · Year</div></div>
-      <div class="poster"><span class="rank">05</span><div class="title">Movie Five</div><div class="meta">Director · Year</div></div>
-    </div>
-  </div>
+      <div class="poster"><span class="rank">01</span><div class="title">The Godfather</div><div class="meta">Francis Ford Coppola · 1972</div></div>
+      <div class="poster"><span class="rank">02</span><div class="title">Star Wars</div><div class="meta">George Lucas · 1977</div></div>
+      <div class="poster"><span class="rank">03</span><div class="title">Lord of the Rings</div><div class="meta">Peter Jackson · 2001</div></div>
+      <div class="poster"><span class="rank">04</span><div class="title">Madagascar</div><div class="meta">Chris Miller · 1990</div></div>
+      <div class="poster"><span class="rank">05</span><div class="title">Scarface</div><div class="meta">Brian De Palma · 1983</div></div>
+      <div class="poster"><span class="rank">01</span><div class="title">The Godfather</div><div class="meta">Francis Ford Coppola · 1972</div></div>
+      <div class="poster"><span class="rank">02</span><div class="title">Star Wars</div><div class="meta">George Lucas · 1977</div></div>
+      <div class="poster"><span class="rank">03</span><div class="title">Lord of the Rings</div><div class="meta">Peter Jackson · 2001</div></div>
+      <div class="poster"><span class="rank">04</span><div class="title">Madagascar</div><div class="meta">Chris Miller · 1990</div></div>
+      <div class="poster"><span class="rank">05</span><div class="title">Scarface</ div>< div class="meta">Brian De Palma · 1983</ div ></ div >
 </section>
 
 <section>
@@ -447,15 +480,15 @@
   <div class="section-label">say hi</div>
   <h2>Let's build<br />something<span class="em">.</span></h2>
   <div class="actions">
-    <a class="btn solid" href="mailto:you@email.com">→ you@email.com</a>
+    <a class="btn solid" href="mailto:asrarwani102@gmail.com">→ asrarwani102@gmail.com</a>
     <a class="btn ghost" href="#" download>↓ Download résumé</a>
-    <a class="btn ghost" href="https://github.com/yourname" target="_blank" rel="noopener">GitHub</a>
-    <a class="btn ghost" href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn ghost" href="https://www.instagram.com/as_rar_8?igsh=eWNmaGFteTlsamQ5&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+    <a class="btn ghost" href="https://www.linkedin.com/in/asrar-maqbool-bb4b461a5/" target="_blank" rel="noopener">LinkedIn</a>
   </div>
 </section>
 
 <footer>
-  <span>© <span id="year"></span> YOUR_NAME — built from scratch, no template</span>
+  <span>© <span id="year"></span> Asrar Maqbool</span>
   <span class="out-muted">psst: try the ↑↑↓↓←→←→ba</span>
 </footer>
 
