@@ -152,10 +152,16 @@
   }
 
   /* ---------- about ---------- */
-  .about { max-width: 760px; }
-  .about p { font-size: clamp(1.3rem, 3vw, 2rem); line-height: 1.4; font-weight: 600; }
-  .about p .hi { color: var(--acid); }
-  .about p .hi2 { color: var(--coral); }
+  .about-flex { display: flex; align-items: center; gap: 2rem; }
+  .headshot {
+    width: 160px; height: 160px; flex-shrink: 0;
+    border-radius: 50%; object-fit: cover;
+    border: 2px solid var(--acid);
+  }
+  @media (max-width: 600px) {
+    .about-flex { flex-direction: column; align-items: flex-start; }
+    .headshot { width: 120px; height: 120px; }
+  }
 
   /* ---------- experience ---------- */
   .job {
@@ -290,7 +296,8 @@
 
 <section id="about">
   <div class="section-label">whoami</div>
-  <div class="about">
+  <div class="about about-flex">
+    <img src="images/me.jpg" alt="Asrar" class="headshot">
     <p>I'm a <span class="hi">business development</span> person who likes turning conversations into partnerships and pipelines into closed deals. <span class="hi2">Currently obsessed with</span> YOUR_THING. Off the clock I'm probably YOUR_HOBBY — and yes, I will talk your ear off about it.</p>
   </div>
 </section>

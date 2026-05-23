@@ -1,0 +1,27 @@
+# ---- macOS ----
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.DocumentRevisions-V100
+.TemporaryItems
+ 
+# ---- VS Code ----
+.vscode/*
+!.vscode/extensions.json
+ 
+# ---- Editor / temp files ----
+*.swp
+*~
+*.tmp
+ 
+# ---- Local dev servers / logs ----
+.cache/
+*.log
+ 
+# ---- Image editing leftovers ----
+*.psd
+Thumbs.db
